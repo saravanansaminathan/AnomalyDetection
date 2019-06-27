@@ -227,8 +227,6 @@ def _get_data_tuple(raw_data, period_override, resampling=False):
         period = _get_period(1440, period_override)
     elif timediff.seconds > 0:
         granularity = 'sec'
-    elif timediff.seconds > 0:
-        granularity = 'sec'
 
         '''
            Aggregate data to minute level of granularity if data stream granularity is sec and
